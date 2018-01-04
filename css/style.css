@@ -610,14 +610,47 @@ body {
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
+    @media (max-width: 81.25em) {
+      .popup__left {
+        padding: 4rem 0 0 3rem;
+        transform: rotate(-15deg) translateX(-1rem) translateY(-4rem);
+        position: absolute; } }
+    @media (max-width: 75em) {
+      .popup__left {
+        padding: 4rem 0 0 3rem;
+        transform: rotate(-15deg) translateX(-1rem) translateY(-4rem);
+        position: absolute; } }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        padding: 4rem 0 0 3rem;
+        transform: rotate(-15deg) translateX(-1rem) translateY(2rem);
+        position: absolute; } }
   .popup__right {
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup__right .heading-secondary {
+        font-size: 2.5rem; } }
+    @media (max-width: 37.5em) {
+      .popup__right .heading-secondary {
+        font-size: 2rem; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 81.25em) {
+      .popup__img {
+        border: 6px solid #fff;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); } }
+    @media (max-width: 75em) {
+      .popup__img {
+        border: 6px solid #fff;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); } }
+    @media (max-width: 56.25em) {
+      .popup__img {
+        border: 6px solid #fff;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -625,12 +658,20 @@ body {
     column-gap: 4rem;
     column-rule: 1px solid #eee;
     hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup__text {
+        column-count: auto;
+        column-gap: 0;
+        column-rule: 0px solid #eee; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
   .popup:target .popup__content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
+    @media (max-width: 37.5em) {
+      .popup:target .popup__content {
+        width: auto; } }
   .popup__close:link, .popup__close:visited {
     color: #777;
     position: absolute;
